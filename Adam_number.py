@@ -1,0 +1,13 @@
+n=int(input())
+m=n*n
+t=n
+s=0
+while(t!=0):
+    s=s*10+t%10
+    t=t//10
+m1=s*s
+s1=0
+while(m1!=0):
+    s1=s1*10+m1%10
+    m1=m1//10
+print(m==s1)
