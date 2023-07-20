@@ -5,12 +5,12 @@ def prime(n):
     else:
         return True
 n=int(input())
-temp=n
+t=n
 rev=0
-while(temp!=0):
-    r=temp%10
+while(t!=0):
+    r=t%10
     rev=rev*10+r
-    temp=temp//10
+    t=t//10
 if(prime(n) and prime(rev)):
     print("circular prime")
 elif(prime(n) or prime(rev)):
